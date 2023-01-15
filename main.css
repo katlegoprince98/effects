@@ -9,12 +9,13 @@ body{
 }
 .button{
     overflow: hidden;
+    box-shadow: 0 10px 8px 1px rgba(119, 160, 6, 0.9);  
 }
 .button a{
     background-color: yellow;
     padding: 20px 40px;
     border-radius: 5px;
-    box-shadow: 0 10px 8px 1px rgba(119, 160, 6, 0.9);
+    
     border-radius: 15px;
     text-decoration: none;
     color: green;
