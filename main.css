@@ -7,3 +7,11 @@ body{
     height: 100vh;
     align-items: center;
 }
+.button a{
+    background-color: yellow;
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0 10px 8px 1px;
+    border-radius: 15px;
+    
+}
