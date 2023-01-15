@@ -17,9 +17,23 @@ body{
     color: green;
     font-size: 150px;
     position: relative;
+    overflow: hidden;
     
 }
 .button a::before{
     content: "";
-    position: absolute;;
+    position: absolute;
+    background-color: green;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width .5s height .5s;
+}
+
+.button a:hover::before{
+    width: 600px;
+    height: 600px;
 }
