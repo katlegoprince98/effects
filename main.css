@@ -7,24 +7,28 @@ body{
     height: 100vh;
     align-items: center;
 }
+
 .button{
-    overflow: hidden;
-    box-shadow: 0 10px 8px 1px rgba(119, 160, 6, 0.9);  
-}
-.button a{
     background-color: yellow;
     padding: 20px 40px;
     border-radius: 5px;
-    
     border-radius: 15px;
     text-decoration: none;
     color: green;
     font-size: 150px;
     position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 8px 1px rgba(119, 160, 6, 0.9);
    
     
 }
-.button a::before{
+
+
+.button span{
+    position: relative;
+    z-index: 1;
+}
+.button::before{
     content: "";
     position: absolute;
     background-color: green;
@@ -37,7 +41,7 @@ body{
     transition: width .5s height .5s;
 }
 
-.button a:hover::before{
+.button:hover::before{
     width: 600px;
     height: 600px;
 }
